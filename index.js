@@ -26,5 +26,13 @@ var todoList = {
       }
     });
     this.displayTodos();
-  } 
+  },
+  toggleCompleted: function (toggled) {
+    this.todos.forEach((todo, index) => {
+      if (todo.todoText === toggled) {
+        todo.completed = !todo.completed;
+      }
+    });
+    this.displayTodos();
+  }
 }
