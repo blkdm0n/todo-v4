@@ -18,5 +18,13 @@ var todoList = {
       }
     });
     this.displayTodos();
-  }, 
+  },
+  deleteTodo: function (deletedTodo) {
+    this.todos.forEach((todo, index) => {
+      if (todo.todoText === deletedTodo) {
+        this.todos.splice(index, 1);
+      }
+    });
+    this.displayTodos();
+  } 
 }
