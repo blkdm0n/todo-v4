@@ -28,7 +28,7 @@ var todoList = {
     this.displayTodos();
   },
   toggleCompleted: function (toggled) {
-    this.todos.forEach((todo, index) => {
+    this.todos.forEach((todo) => {
       if (todo.todoText === toggled) {
         todo.completed = !todo.completed;
       }
